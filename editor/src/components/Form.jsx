@@ -73,14 +73,19 @@ const Form = () => {
       console.log(body)
       console.log("uploading images");
       const cardURL  = await uploadImage(cardImage);
+    
       const data = {title:title,
                     body:body,
                     cardimage:cardURL,
                     text:qdata.text  
                   }
+      
       console.log(data)
+      addPost(data)
       alert("Data uploaded")
   }
+
+
   return (
     <div>
 

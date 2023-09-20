@@ -87,7 +87,7 @@ const Editor = ({setQbody}) => {
         const handler = (delta,oldDelta,source)=>{
             if(source !== 'user') return
             console.log(quil.getContents());
-            setQbody({body:quil.getContents(),text:quil.getText(0,50)});
+            setQbody({body:quil.getContents(),text:quil.getText(0,100)});
 
          
             
